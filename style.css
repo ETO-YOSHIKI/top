@@ -132,14 +132,22 @@ img{
   font-size: 20px;
   margin: 20px 0;
 }
+.sec_05 {
+text-align: center;
+margin-top: 500px;
+}
 
 .sec_btn {
   background-color: #cccccc;
+  height: 250px;
+  align-content: center;
+  margin-top: 200px;
 }
 
 .content_btn_left {
   background-color: white;
   width: 360px;
+  padding-bottom: 45px;
 }
 
 .content_btn_right {
@@ -157,25 +165,87 @@ img{
 .btn{
   background-color: pink;
   color: white;
+  padding: 15px;
 }
 
 .btn2{
   background-color: green;
   color: white;
+  padding: 15px;
 }
 
 .sec_btn_content{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
-.wrapper100 {
-  max-width: 1200px;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 25px;
+.icon-container {
+  display: flex;
+  align-items: center;
 }
+.dli-clock {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+.dli-clock::before, .dli-clock::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  background: currentColor;
+  border-radius: 0.1em;
+  transform: translate(-0.05em, 0.05em);
+}
+
+.dli-clock::before {
+  width: 0.1em;
+  height: 0.4em;
+}
+
+.dli-clock::after {
+  width: 0.35em;
+  height: 0.1em;
+}
+.icon-number {
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.rink ul {
+  display: flex;
+}
+
+.sec_06 {
+  margin-top: 100px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 150px;
+}
+
+.rink li {
+  margin-right: auto;
+    margin-left: auto;
+    padding: 35px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+
+
+
 
 
