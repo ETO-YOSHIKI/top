@@ -1,0 +1,375 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.header h1{
+  width: 1200px;
+}
+
+.head_btn {
+  width: 200px;
+  text-align: center;
+  background-color: #e10526;
+  color: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+.head_btn2 {
+  width: 200px;
+  text-align: center;
+  background-color: #03e70e;
+  color: #fff;
+  padding: 20px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu li{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 35px;
+}
+
+.sec_01 {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.sec_01_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.sec_01 h1 {
+ margin: 50px;
+}
+
+.sec_01_content .sec_01_left {
+  width: 38%;
+}
+
+
+img{
+  width: 100%;
+}
+
+
+.sec_03_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #cccccc;
+}
+.content_left {
+  width: 80%;
+  margin: 30px;
+}
+
+.sec_03_h3 {
+  font-size: 25px;
+}
+
+.sec_03_p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.content_box {
+  margin-right: 180px;
+}
+
+.sec_04 h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.sec_04_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_04_box {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec_04_box h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.sec_btn {
+  height: 250px;
+  align-content: center;
+  text-align: center;
+}
+
+.btn0 {
+  background-color: green;
+    color: white;
+    padding: 15px 100px 15px 100px;
+}
+
+.sec_btn2 {
+  background-color: #cccccc;
+  height: 250px;
+  align-content: center;
+  margin-top: 200px;
+}
+
+.content_btn_left {
+  background-color: white;
+  width: 360px;
+  padding-bottom: 45px;
+}
+
+.content_btn_right {
+  background-color: white;
+  width: 360px;
+  margin-left: 10px;
+}
+
+.sec_btn2 h2 {
+  font-weight: normal;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.btn{
+  background-color: pink;
+  color: white;
+  padding: 15px;
+}
+
+.btn2{
+  background-color: green;
+  color: white;
+  padding: 15px;
+}
+
+.sec_btn_content{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sec_03 {
+  text-align: center;
+  margin-top: 500px;
+}
+
+.sec_04 {
+  margin-top: 100px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 150px;
+}
+
+.rink ul {
+  display: flex;
+}
+
+.rink li {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 35px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+/* ここからコピペ */
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 720px; */
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  /* border-top: 1px solid #ddd; */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* width: 48px; */
+  display: inline-block;
+  text-align: center;
+  /* background: #5bc8ac; */
+  /* color: #fff; */
+  font-size: 14px;
+}
+.Form-Item-Label-Required0 {
+  background-color: #e10526;
+  color: #fff;
+  /* border-radius: 6px; */
+  margin-right: 8px;
+  padding: 10px;
+  /* width: 48px; */
+  display: inline-block;
+  text-align: center;
+  /* background: #5bc8ac; */
+  /* color: #fff; */
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  /* background: #eaedf2; */
+  font-size: 18px;
+}
+.Form-Item-Input1 {
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+
+
