@@ -7,18 +7,18 @@
 </head>
 <body>
   <?php
-$a =mt_rand(0,100);
-if($a >=80){
-  $judge ="$a 大吉";  
-} elseif ($a >= 80){
-  $judge ="$a 中吉";
-} elseif ($a >= 50){
-  $judge ="$a 吉";
-} elseif ($a >= 20){
-  $judge ="$a 凶";
-} elseif ($a >= 5){
-  $judge ="$a 大凶";
-}
-?>
+    $a =mt_rand(1,100);
+    if($a >=81){
+      $judge ="大吉";  
+    } elseif ($a >= 51){
+      $judge ="中吉";
+    } elseif ($a >= 21){
+      $judge ="吉";
+    } elseif ($a >= 6){
+      $judge ="凶";
+    } else {
+      $judge ="大凶";
+    }
+  ?>
 
-<p>今日の運勢は<?= $judge;?></p>
+<p>今日の運勢は<?= $judge;?>です。</p>

@@ -9,16 +9,24 @@
   <?php
 $a =mt_rand(1, 12);
 switch($a) {  
-  case $a => 3;
+  case  3;
+  case  4;
+  case  5;
     $judge = '春'; 
     break; 
-  case $a => 5;
+  case  6;
+  case  7;
+  case  8;
     $judge = '夏'; 
     break; 
-  case $a => 6;
+  case  9;
+  case  10;
+  case  11;
     $judge = '秋'; 
     break; 
-  case $a => 8;
+  case  12;
+  case  1;
+  case  2;
     $judge = '冬'; 
     break; 
     // default,$judge = $a.'の季節です。';
