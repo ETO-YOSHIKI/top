@@ -8,15 +8,15 @@
 <body>
   <?php
     $a =mt_rand(1,12);
-    if($a and 3 and 4 and 5){
-      $judge ="春";  
-    } elseif ($a and 6 and 7 and 8){
-      $judge =" 夏";
-    } elseif ($a and 9 and 10 and 11){
-      $judge =" 秋";
-    } elseif ($a and 12 and 1 and 2){
-      $judge ="冬";
-    }
+    if ($a >= 3 and $a <= 5) {
+      $season = "春";
+  } elseif ($a >= 6 and $a <= 8) {
+      $season = "夏";
+  } elseif ($a >= 9 and $a <= 11) {
+      $season = "秋";
+  } else {
+      $season = "冬";
+  }
 ?>
 
-<p>「<?= $a;?>月は<?= $judge;?>の季節です。」</p>
+<p>「<?= $a;?>月は<?= $season;?>の季節です。」</p>
