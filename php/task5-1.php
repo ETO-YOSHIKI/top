@@ -10,9 +10,9 @@
 echo "<h1>九九の計算</h1>";
   for ($i=1; $i <=9 ; $i++) { 
     for ($j=1; $j <=9 ; $j++) { 
-      echo "$i × $j = " . ($i * $j) . "";
+      echo "$i × $j = " . $i * $j . "\n";
     }
-    echo "<br><br>";
+    echo "<br>";
 
   }
   ?>

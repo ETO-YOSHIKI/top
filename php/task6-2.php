@@ -7,24 +7,23 @@
 </head>
 <body>
   <?php
-$a = array('日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日');
 
-$i=0;
-echo "<ul>";
-while($i < count($a)){
-echo"<li>" .$a[$i]. "</li>";
-  $i++;
+
+function max_number($a, $b) {
+  return max($a, $b);
 }
-echo "</ul>";
+
+$a = 9;
+$b = 21;
+
+$maxValue = max_number($a, $b);
 
 ?>
+<p>$a = 9</p>
+<p>$b = 21</p>
+<p>$aと$bの最大値は<?= $maxValue;?>です。</p>
 
 
-
-
- 
- 
-  
 </body>
 
 </html>

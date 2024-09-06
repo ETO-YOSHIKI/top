@@ -8,19 +8,19 @@
 <body>
   <?php
 
-$a =[
-  ["sho" => "鉛筆", "kakaku" => 100, "zei" => 110],
-  ["sho" => "消しゴム", "kakaku" => 200, "zei" => 220],
-  ["sho" => "定規", "kakaku" => 300, "zei" => 330],
+$as =[
+  ["sho" => "鉛筆", "kakaku" => 100],
+  ["sho" => "消しゴム", "kakaku" => 200],
+  ["sho" => "定規", "kakaku" => 300],
 ];
-
+define('TAX',1.1);
 echo "<table border='1'>";
 echo "<tr><th>商品</th><th>価格</th><th>税込価格</th></tr>";
-foreach ($a as $a) {
+foreach ($as as $a) {
   echo"<tr>";
   echo"<td>" . $a['sho'] . "</td>";
   echo"<td>" . $a['kakaku'] . "円</td>";
-  echo"<td>" . $a['zei'] . "円</td>";
+  echo"<td>" . $a['kakaku']*TAX . "円</td>";
   echo"</tr>";
 }
 echo"</table>";
