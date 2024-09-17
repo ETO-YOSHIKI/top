@@ -10,18 +10,22 @@
 
 
 function max_number($a, $b) {
-  return max($a, $b);
+  if($a > $b){
+    return $a;  
+  
+} else {
+    return $b;
 }
-
+}
 $a = 9;
 $b = 21;
 
 $maxValue = max_number($a, $b);
-
+// echo "最大値は: " . $maxValue;
 ?>
-<p>$a = 9</p>
-<p>$b = 21</p>
-<p>$aと$bの最大値は<?= $maxValue;?>です。</p>
+<p>$a = <?= $a;?></p>
+<p>$b = <?= $b;?></p>
+<p>$aと$bのうち最大値は<?= $maxValue;?>です。</p>
 
 
 </body>

@@ -6,19 +6,12 @@
   <title>PHP練習</title>
 </head>
 <body>
+  
   <?php
-
-
-function showString($num, $str) {
-    for ($i = 0; $i < $num; $i++) {
-        echo $str . "<br>\n";
-    }
+  for ($i = 10; $i >= 1; $i--) {
+  echo $i . '<br>';
 }
-
-showString(3, "気合いだ!");
-
-?>
-
+  ?>
 </body>
 
 </html>

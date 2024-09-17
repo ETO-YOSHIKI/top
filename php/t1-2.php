@@ -6,19 +6,13 @@
   <title>PHP練習</title>
 </head>
 <body>
+  
   <?php
-
-
-function showString($num, $str) {
-    for ($i = 0; $i < $num; $i++) {
-        echo $str . "<br>\n";
-    }
-}
-
-showString(3, "気合いだ!");
-
-?>
-
+  $names = ['太郎', '次郎', '三郎', '四郎', '五郎'];
+  for ($i = 0; $i < count($names); $i++) {
+      echo $names[$i] . '<br>';
+  }
+  ?>
 </body>
 
 </html>
