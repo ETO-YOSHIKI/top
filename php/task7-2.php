@@ -32,7 +32,7 @@ class Person {
     printf('(%s) %s %d歳 %s <br>',$this->id,$this->name,$this->age,$this->sex);
   }
 }
-
+//ここから子クラス
 class PartStaff extends Person {
   // プロパティ
   private $jikyu;

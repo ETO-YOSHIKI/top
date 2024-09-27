@@ -370,6 +370,20 @@ footer p {
     font-size: 16px;
   }
 }
-
+/* 追加css */
+.c-button {
+  background-color: #4CAF50; /* ボタンの背景色 */
+  color: white; /* ボタンの文字色 */
+  border: 2px solid #4CAF50; /* ボタンの枠の色と太さ */
+  padding: 10px 20px; /* ボタンの内側の余白 */
+  text-align: center; /* テキストの位置 */
+  text-decoration: none; /* テキストの装飾 */
+  display: block; /* ブロック表示に変更 */
+  font-size: 16px; /* フォントサイズ */
+  margin: 20px auto; /* 上下の余白を20px、左右の余白を自動に設定 */
+  cursor: pointer; /* カーソルの形状 */
+  border-radius: 4px; /* 角の丸み */
+  width: fit-content; /* ボタンの幅を内容に合わせる */
+}
 
 

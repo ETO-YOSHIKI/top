@@ -37,68 +37,76 @@
     <main>
       <section class="sec_01">
         <div class="wrapper">
+          <?php
+            $name = $_POST['name'];
+            $kana = $_POST['kana'];
+            $mail = $_POST['mail'];
+            $tel = $_POST['tel'];
+            $sentaku = $_POST['sentaku'];
+            $toi = $_POST['toi'];             
+            $check = $_POST['check'];
+          ?>
           <h1>お問い合わせ</h1>
-                <p>お問い合わせや業務内容に関するご質問は、電話またはこちらのお問い合わせフォームより承っております。</p>
-                <br>後ほど担当者よりご連絡させていただきます。</br>
+                送信完了しました。</br>
               </div>
         </section>
         <section class="Form">
-          <form action="task8-1.php" method="post">
+          <form action="task8-2.php" method="post">
 
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">お名前</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <input type="text" class="Form-Item-Input" placeholder="山田太郎" name="name">
+             <input type="text" class="Form-Item-Input" placeholder="山田太郎" name="name" value="<?= $name;?>">
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">フリガナ</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <input type="text" class="Form-Item-Input" placeholder="ヤマダタロウ" name="kana">
+             <input type="text" class="Form-Item-Input" placeholder="ヤマダタロウ" name="kana" value="<?= $kana;?>">
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">メールアドレス</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <input type="text" class="Form-Item-Input" placeholder="info@fast-creadmy.jp" name="mail">
+             <input type="text" class="Form-Item-Input" placeholder="info@fast-creadmy.jp" name="mail" value="<?= $mail;?>" >
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">電話番号</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <input type="text" class="Form-Item-Input" placeholder="info@fast-creadmy.jp" name="tel">
+             <input type="text" class="Form-Item-Input" placeholder="info@fast-creadmy.jp" name="tel" value="<?= $tel;?>">
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">お問い合わせ項目</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-              <select class="Form-Item-Input"  name="sentaku">
-                <option value="option0">選択してください</option>
-                <option value="option1">選択肢1</option>
-                <option value="option2">選択肢2</option>
-                <option value="option3">選択肢3</option>
-                <option value="option4">選択肢4</option>
-              </select>
+             <select class="Form-Item-Input"  name="sentaku">
+             <option value="option0">選択してください</option>
+                <option value="option1" <?php if ($sentaku=="option1"){echo selected;}  ?>>選択肢1</option>
+                <option value="option2" <?php if ($sentaku=="option2"){echo selected;}  ?>>選択肢2</option>
+                <option value="option3" <?php if ($sentaku=="option3"){echo selected;}  ?>>選択肢3</option>
+                <option value="option4" <?php if ($sentaku=="option4"){echo selected;}  ?>>選択肢4</option>
+                </select>
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">お問い合わせ内容</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <input type="text" class="Form-Item-Input" placeholder="こちらにお問い合わせ内容をご記入ください" name="toi">
+             <input type="text" class="Form-Item-Input" placeholder="こちらにお問い合わせ内容をご記入ください" name="toi" value="<?= $toi;?>">
             </div>
             <div class="Form-Item">
              <p class="Form-Item-Label">
               <span class="Form-Item-Label-Required">個人情報保護方針</span>
               <span class="Form-Item-Label-Required0">必須</span>
              </p>
-             <label><input type="checkbox" name="check">個人情報保護方針に同意します</label>
+             <label> <label><input type="checkbox" name="check" <?php if($check=="on") {echo checked;}?> >個人情報保護方針に同意します</label>
             </div>
             <button type="submit" class="c-button">確認</button>
           </form>
