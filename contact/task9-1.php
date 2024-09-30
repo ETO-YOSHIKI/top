@@ -46,6 +46,35 @@
             $toi = $_POST['toi'];             
             $check = $_POST['check'];
           ?>
+          <?php
+          try {
+            $pdo = new PDO( 
+              'mysql:host=localhost;dbname=otoi;charset=utf8mb4', 
+              'root', 
+              'root'
+              );
+
+              $pdo->query("DROP TABLE IF EXISTS consumer");
+              $pdo->query(
+                "CREATE TABLE consumer(
+                id   INT PRIMARY KEY,
+                name  VARCHAR(128),
+                kana  VARCHAR(128),
+                mail  VARCHAR(64),
+                tel   INT,
+                sentaku VARCHAR(64),
+                toi   VARCHAR(128),
+                check VARCHAR(64),
+                date  DATE,
+                time  TIME
+              )"
+              );
+
+          } catch(PDOException $e){
+            echo $e->getMessage() . '<br>';
+            exit;
+          }
+          ?>
           <h1>お問い合わせ</h1>
                 送信完了しました。</br>
               </div>
